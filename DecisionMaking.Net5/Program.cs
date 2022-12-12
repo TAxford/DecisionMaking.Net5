@@ -6,7 +6,8 @@ namespace DecisionMaking.Net5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What is the temperature outside?");
+            //is else if statement
+            /*Console.WriteLine("What is the temperature outside?");
             string temperature = Console.ReadLine();
             int numTemp = int.Parse(temperature);
 
@@ -22,7 +23,23 @@ namespace DecisionMaking.Net5
                 Console.WriteLine("Cozy & warm!");
             }
 
-            Console.Read();
+            Console.Read();*/
+
+
+            //tryParse
+            string numberAsString = "128";
+            int parsedValue;
+            bool success =int.TryParse(numberAsString, out parsedValue);
+
+            if (success)
+                Console.WriteLine("Parsing successful - number is " + parsedValue);
+            else
+                Console.WriteLine("Parsing failed");
+
+
+
+
+
         }
     }
 }
