@@ -6,19 +6,24 @@ namespace DecisionMaking.Net5
     {
         static void Main(string[] args)
         {
-            int temperature = 10;
+            string temperature = Console.ReadLine();
+            int numTemp = int.Parse(temperature);
 
-            if (temperature < 10)
+            Console.WriteLine("What is the temperature outside?");
+            Console.ReadLine();
+
+
+            if (numTemp < 10)
             {
                 Console.WriteLine("take the coat");
             }
 
-            if(temperature == 10)
+            if(numTemp == 10)
             {
                 Console.WriteLine("It's 10 degrees C");
             }
 
-            if(temperature > 10)
+            if(numTemp > 10)
             {
                 Console.WriteLine("Cozy & warm!");
             }
