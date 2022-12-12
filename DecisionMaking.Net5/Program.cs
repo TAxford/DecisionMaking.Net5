@@ -4,10 +4,11 @@ namespace DecisionMaking.Net5
 {
     internal class Program
     {
+               
         static void Main(string[] args)
         {
             //is else if statement
-            Console.WriteLine("What is the temperature outside?");
+            /*Console.WriteLine("What is the temperature outside?");
             string temperature = Console.ReadLine();
             int numTemp;
             int number;
@@ -46,6 +47,23 @@ namespace DecisionMaking.Net5
             else
                 Console.WriteLine("Parsing failed");*/
 
+            //Nested If Statment
+            bool isAdmin = false ;
+            bool isRegistered = true;
+            string userName = "";
+
+            if (isRegistered)
+            {
+                Console.WriteLine("Hi there, registered user");
+                if(userName != "")
+                {
+                    Console.WriteLine("Hi there, " + userName);
+                    if (userName.Equals("Admin"))
+                    {
+                        Console.WriteLine("Hi there, Admin");
+                    }
+                }
+            }
 
 
 
