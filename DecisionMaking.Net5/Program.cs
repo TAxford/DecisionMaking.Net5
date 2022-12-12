@@ -51,6 +51,8 @@ namespace DecisionMaking.Net5
             bool isAdmin = false ;
             bool isRegistered = true;
             string userName = "";
+            Console.WriteLine("Please enter your user name");
+            userName = Console.ReadLine();
 
             if (isRegistered)
             {
@@ -58,12 +60,13 @@ namespace DecisionMaking.Net5
                 if(userName != "")
                 {
                     Console.WriteLine("Hi there, " + userName);
-                    if (userName.Equals("Admin"))
+                    if (userName.Equals("admin"))
                     {
                         Console.WriteLine("Hi there, Admin");
                     }
                 }
-            }
+                Console.Read()
+;            }
 
 
 
