@@ -18,6 +18,7 @@ namespace DecisionMaking.Net5
             else
             {
                 numTemp=0;
+                Console.WriteLine("Value entered, was no number. 0 was set as temperature.");
             }
 
             
