@@ -6,7 +6,24 @@ namespace DecisionMaking.Net5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int temperature = 10;
+
+            if (temperature < 10)
+            {
+                Console.WriteLine("take the coat");
+            }
+
+            if(temperature == 10)
+            {
+                Console.WriteLine("It's 10 degrees C");
+            }
+
+            if(temperature > 10)
+            {
+                Console.WriteLine("Cozy & warm!");
+            }
+
+            Console.Read();
         }
     }
 }
