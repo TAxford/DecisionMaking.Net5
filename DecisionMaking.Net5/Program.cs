@@ -48,7 +48,7 @@ namespace DecisionMaking.Net5
                 Console.WriteLine("Parsing failed");*/
 
             //Nested If Statment
-            bool isAdmin = false ;
+            /*bool isAdmin = false ;
             bool isRegistered = true;
             string userName = "";
             Console.WriteLine("Please enter your user name");
@@ -66,15 +66,28 @@ namespace DecisionMaking.Net5
                     }
                 }
                 
-;            }
+            }
 
             if(isAdmin || isRegistered)
             {
                 Console.WriteLine("You are logged in");
             }
 
-            Console.Read();
+            Console.Read();*/
 
+            //Switch Statement
+
+            int age = 25;
+
+            switch (age)
+            {
+                case 15:
+                    Console.WriteLine("To young to pary in the club!");
+                        break;
+                case 25:
+                    Console.WriteLine("Good to go!");
+                    break;
+            }
 
 
 
