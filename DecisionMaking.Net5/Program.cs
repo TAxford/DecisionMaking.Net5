@@ -65,8 +65,17 @@ namespace DecisionMaking.Net5
                         Console.WriteLine("Hi there, Admin");
                     }
                 }
-                Console.Read()
+                
 ;            }
+
+            if(isAdmin || isRegistered)
+            {
+                Console.WriteLine("You are logged in");
+            }
+
+            Console.Read();
+
+
 
 
 
